@@ -1,8 +1,9 @@
 import { Routes, Route, Link } from "react-router-dom";
 import { useState, useEffect } from 'react';
 import './App.css';
-import Bookclubsearch from './components/Bookclubsearch';
-import Bookclub from './components/Bookclub';
+import Bookclubsearch from './Views/Bookclubsearch';
+import Bookclub from './Views/Bookclub';
+import Navbar from "./components/Navbar";
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
           console.log(`Server error: ${err.message}`);
       }
   };
+  
 
 
 
@@ -35,10 +37,11 @@ function App() {
     <div className="App">
     APP
       <div className="content">
-      <Routes>
-        <Route path="/" element={<Bookclubsearch bookClubs={bookClubs}/>} />
-        <Route path="/Bookclub/:id" element={<Bookclub />} />
-      </Routes>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Bookclubsearch />} />
+          <Route path="/Bookclub/:id" element={<Bookclub />} />
+        </Routes>
       </div>
         
       

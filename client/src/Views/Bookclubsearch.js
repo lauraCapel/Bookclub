@@ -7,20 +7,18 @@ export default function Bookclubsearch(props) {
     // store result request in state
     // in return
     // to map bookclubs and display
+    
 
     return (
         <div className='Bookclubsearch'>
-        Bookclubsearch
-            {props.bookClubs.map((bookClub) => (
-                <div className="bookclub-preview" key={bookClub.id}>
-                    <td>
-                        <Link to="/Bookclub/:id">{bookClub.name}</Link>
-                    </td>
-                    
-                    <p>category</p>
-                    <p>num_members</p>
-                </div>
+            <h2>Bookclubsearch</h2>
+            <ul>
+                {props.bookClubs.map((bc) => (
+                    <li className="bookclub-preview" key={bc.id}>
+                        <Link to={"/Bookclub/"+bc.id}>{bc.name}</Link>
+                    </li>
             ))}
+            </ul> 
             {/* <Link to="/Bookclub/:id">{bookClub.name}</Link> */}
         </div>
     )
