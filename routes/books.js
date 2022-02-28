@@ -66,24 +66,24 @@ router.post("/", async (req, res) => {
 });
 
 // EDIT BOOK BY ID
-// router.put("/:id", async (req, res) => {
-//     let id = req.params.id;
-//     let { rating } = req.body;
-//     let sqlCheckID = `SELECT * FROM books WHERE id = ${id}`;
-//     let sqlUpdate = `UPDATE bookclub SET rating= ${rating}  WHERE id = ${id}`;
+router.put("/:id", async (req, res) => {
+    let id = req.params.id;
+    let { rating } = req.body;
+    let sqlCheckID = `SELECT * FROM books WHERE id = ${id}`;
+    let sqlUpdate = `UPDATE bookclub SET rating= ${rating}  WHERE id = ${id}`;
     
-//     try {
-//         let result = await db(sqlCheckID);
-//         if (result.data.length === 0) {
-//         res.status(404).send({ error: "Book not found!" });
-//         } else {
-//         await db(sqlUpdate);
-//         let result = await db("select * from books");
-//         res.status(201).send(result.data);
-//         }
-//     } catch (err) {
-//         res.status(500).send({ error: err.message });
-//     }
-// });
+    try {
+        let result = await db(sqlCheckID);
+        if (result.data.length === 0) {
+        res.status(404).send({ error: "Book not found!" });
+        } else {
+        await db(sqlUpdate);
+        let result = await db("select * from books");
+        res.status(201).send(result.data);
+        }
+    } catch (err) {
+        res.status(500).send({ error: err.message });
+    }
+});
 
 module.exports = router;

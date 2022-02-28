@@ -1,4 +1,4 @@
-nav {
+/* nav {
     border: 1px solid #ccc;
 }
 
@@ -14,9 +14,32 @@ nav li {
 
 nav a {
     padding: 10px;
-}
+} */
 
 /* 'active' class automatically added by React Router */
-nav a.active {
+/* nav a.active {
     background-color: rgb(175, 209, 207);
+} */
+
+
+/* .Navbar {
+    position: fixed;
+    z-index: 2;
+    top: 40px;
+    right: 5%;
+} */
+.Navbar  {
+    /* this is the stretching navigation background */
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    background: #9acd91;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    transition: height 0.2s, box-shadow 0.2s;
+    height: 100%;
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);
 }

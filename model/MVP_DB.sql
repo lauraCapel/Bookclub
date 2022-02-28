@@ -12,7 +12,7 @@ CREATE TABLE books(
     PRIMARY KEY (id)
 );
 
-INSERT INTO books (id,name,author,rating,year,cover,gr_URL) values (1885, 'Pride and Prejudice', 'Jane Austen', 4.28, '1813', "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1320399351i/1885._SY75_.jpg", "https://www.goodreads.com/book/show/1885.Pride_and_Prejudice?from_search=true&from_srp=true&qid=MHMksCQsdK&rank=1");
+INSERT INTO books (id,name,author,rating,year,cover,gr_URL) values (1885, 'Pride and Prejudice', 'Jane Austen', 4.28, '1813', "https://www.google.es/url?sa=i&url=https%3A%2F%2Fwww.gutenberg.org%2Ffiles%2F1342%2F1342-h%2F1342-h.htm&psig=AOvVaw3u5TKVnBeTbOgrNIF3oQqi&ust=1646135918535000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCIikiK2sovYCFQAAAAAdAAAAABAD");
 INSERT INTO books (id,name,author,rating,year,cover,gr_URL) values (14935, 'Sense and Sensibility', 'Jane Austen', 4.08, '1811', "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1397245675i/14935._SY75_.jpg", "https://www.goodreads.com/book/show/14935.Sense_and_Sensibility?from_search=true&from_srp=true&qid=MHMksCQsdK&rank=2");
 INSERT INTO books (id,name,author,rating,year,cover,gr_URL) values (6969, 'Emma', 'Jane Austen', 4.03, '1815', "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1373627931i/6969._SY75_.jpg", "https://www.goodreads.com/book/show/6969.Emma?from_search=true&from_srp=true&qid=MHMksCQsdK&rank=3");
 INSERT INTO books (id,name,author,rating,year,cover,gr_URL) values (2156, 'Persuasion', 'Jane Austen', 4.14, '1817', "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1385172413i/2156._SY75_.jpg", "https://www.goodreads.com/book/show/2156.Persuasion?from_search=true&from_srp=true&qid=MHMksCQsdK&rank=5");

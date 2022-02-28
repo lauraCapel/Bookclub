@@ -11,7 +11,20 @@ export default function Bookclubsearch(props) {
 
     return (
         <div className='Bookclubsearch'>
-            <h2>Bookclubsearch</h2>
+            <h2>My Bookclubs</h2>
+            {/* <div className="search">
+                <label>
+                <input
+                    type="text"
+                    name="extra_pic"
+                    value={item.extra_pic}
+                    onChange={handleInputChange}
+                />
+                </label>
+                
+            </div> */}
+
+
             <ul>
                 {props.bookClubs.map((bc) => (
                     <li className="bookclub-preview" key={bc.id}>

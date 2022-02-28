@@ -9,7 +9,9 @@ function Navbar() {
             <ul>
                 <li><NavLink to="/Bookclubs">Bookclubs</NavLink></li>
                 <li><NavLink to="/Books">Books</NavLink></li>
+                <li className="logout"><NavLink to="/">Log out</NavLink></li>
             </ul>
+
         </nav>
     );
 }

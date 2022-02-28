@@ -94,25 +94,25 @@ router.post("/", async (req, res) => {
 });
 
 // EDIT BOOKCLUB BY ID
-// router.put("/:id", async (req, res) => {
-//     let id = req.params.id;
-//     let { name, category, num_members, current_book } = req.body;
-//     let sqlCheckID = `SELECT * FROM bookclub WHERE id = ${id}`;
-//     let sqlUpdate = `UPDATE bookclub SET name = '${name}', category = '${category}', num_members = ${num_members}, current_book = ${current_book}  WHERE id = ${id}`;
+router.put("/:id", async (req, res) => {
+    let id = req.params.id;
+    let { name, category, num_members, current_book } = req.body;
+    let sqlCheckID = `SELECT * FROM bookclub WHERE id = ${id}`;
+    let sqlUpdate = `UPDATE bookclub SET name = '${name}', category = '${category}', num_members = ${num_members}, current_book = ${current_book}  WHERE id = ${id}`;
     
-//     try {
-//         let result = await db(sqlCheckID);
-//         if (result.data.length === 0) {
-//         res.status(404).send({ error: "Bookclub not found!" });
-//         } else {
-//         await db(sqlUpdate);
-//         let result = await db("select * from bookclub");
-//         res.status(201).send(result.data);
-//         }
-//     } catch (err) {
-//         res.status(500).send({ error: err.message });
-//     }
-// });
+    try {
+        let result = await db(sqlCheckID);
+        if (result.data.length === 0) {
+        res.status(404).send({ error: "Bookclub not found!" });
+        } else {
+        await db(sqlUpdate);
+        let result = await db("select * from bookclub");
+        res.status(201).send(result.data);
+        }
+    } catch (err) {
+        res.status(500).send({ error: err.message });
+    }
+});
 
 // DELETE BOOKCLUB
 router.delete("/:id", async (req, res) => {
