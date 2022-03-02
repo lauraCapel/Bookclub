@@ -68,9 +68,9 @@ router.post("/", async (req, res) => {
 // EDIT BOOK BY ID
 router.put("/:id", async (req, res) => {
     let id = req.params.id;
-    let { rating } = req.body;
+    let { name,author,rating,year,cover,gr_URL } = req.body;
     let sqlCheckID = `SELECT * FROM books WHERE id = ${id}`;
-    let sqlUpdate = `UPDATE bookclub SET rating= ${rating}  WHERE id = ${id}`;
+    let sqlUpdate = `UPDATE bookclub SET name = ${rating} ,author = ${rating} ,rating = ${rating} ,year =${rating} ,cover = ${rating} ,gr_URL = ${rating}  WHERE id = ${id}`;
     
     try {
         let result = await db(sqlCheckID);

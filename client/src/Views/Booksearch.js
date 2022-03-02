@@ -12,6 +12,7 @@ export default function Bookclubsearch(props) {
     return (
         <div className='Bookclubsearch'>
             <h2>Book search</h2>
+            <div>
             <ul>
                 {props.books.map((bc) => (
                     <li className="book-preview" key={bc.id}>
@@ -19,6 +20,7 @@ export default function Bookclubsearch(props) {
                     </li>
             ))}
             </ul> 
+            </div>
             {/* <Link to="/Bookclub/:id">{bookClub.name}</Link> */}
         </div>
     )

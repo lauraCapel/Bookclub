@@ -10,10 +10,11 @@ export default function Login() {
             <input className='form-control' type="text" id="floatingInput" placeholder="name@example.com" />
             <label htmlFor="floatingInput">User</label>
         </div>
-        <div class="form-floating">
+        <div className="form-floating">
             <input className='form-control' type="password" id="floatingPassword" placeholder="Password" />
             <label htmlFor="floatingPassword">Password</label>
         </div>
+        <br></br>
         <div>
         <Link to="/Bookclubs" className='btn btn-light'>Log in</Link>
         </div>

@@ -24,14 +24,16 @@ export default function Bookclub(props) {
             <p>This month we are reading:</p>
             <h3>{book.name}</h3>
             <p>by: {book.author}</p>
-            <Link to={"/Book/"+book.id}>
+            <Link to={"/Book/"+book.id} className="navlink">
                 <img src={book.cover} alt="display image"></img>
             </Link>
             {/* <img src={book.cover} alt="display image"></img> */}
-
-
+            <br></br>
+            <br></br>
             {/* <Book /> */}
-            <Link to="/Bookclubs">back</Link>
+            <div className="d-grid gap-2 d-md-flex justify-content-md-end">
+                <Link key="back" to="/Bookclubs"  className="btn btn-dark">back</Link>
+            </div>
         
         </div>
     )

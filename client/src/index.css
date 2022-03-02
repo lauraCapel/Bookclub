@@ -13,7 +13,12 @@ code {
     monospace;
 }
 
-ul {
+ul, li {
   list-style-type: none;
   padding-inline-start: unset;
+}
+
+navlink {
+  text-decoration: none;
+  color: black;
 }

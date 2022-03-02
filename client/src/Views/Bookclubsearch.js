@@ -27,7 +27,7 @@ export default function Bookclubsearch(props) {
 
             <ul>
                 {props.bookClubs.map((bc) => (
-                    <li className="bookclub-preview" key={bc.id}>
+                    <li className="navlink" key={bc.id}>
                         <Link to={"/Bookclub/"+bc.id}>{bc.name}</Link>
                     </li>
             ))}

@@ -6,12 +6,12 @@ nav ul {
     list-style-type: none;
     padding: 0;
 }
-
+*/
 nav li {
     display: inline-block;
     margin: 0 5px;
 }
-
+/*
 nav a {
     padding: 10px;
 } */
@@ -30,9 +30,10 @@ nav a {
 } */
 .Navbar  {
     /* this is the stretching navigation background */
-    position: absolute;
-    z-index: 1;
-    top: 0;
+    padding-top: 15px;
+    position: right;
+    z-index: auto;
+    top: auto;
     right: 0;
     width: 60px;
     height: 60px;
